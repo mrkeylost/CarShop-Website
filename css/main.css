@@ -1,0 +1,759 @@
+/* Nikolaus Chandra - 2502011404 - BC01 */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=EB+Garamond:wght@700&family=Roboto+Mono:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=EB+Garamond:ital,wght@1,600&family=Poppins:wght@700&family=Smooch&family=Sulphur+Point:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=EB+Garamond:wght@700&family=Kdam+Thmor+Pro&family=Roboto+Mono:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Courgette&family=EB+Garamond:ital,wght@1,600&family=Poppins:wght@700&family=Smooch&family=Sulphur+Point:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ===================================== navbar ============================================= */
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: rgb(69, 68, 68);
+    overflow: hidden;
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 7777;
+    transition: all 30ms ease-in-out;
+    width: 100%;
+    padding-top: 0px 20px;
+    align-items: center;
+}
+
+header .logo a{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: white;
+    vertical-align: middle;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.inner{
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+li a{
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 30px;
+    color: white;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+li .show{
+    font-weight: bold;
+    color: coral;
+    background-color: white;
+    border-radius: 50px;
+    position: relative;
+}
+
+li a:hover{
+    color: coral;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid coral;
+}
+
+.action button{
+    margin-right: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.action button:hover{
+    background-color: rgb(51, 45, 45);
+}
+
+/* =================================== Scroll Bar ======================================== */
+
+::-webkit-scrollbar{
+    width: 11px;
+    height: 11px;
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 100%;
+    background-color: rgb(52, 45, 45);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: gray;
+}
+
+/* ======================================= Main Page ===================================== */
+
+.home{
+    padding-top: 70px;
+    background-image: url(../images/home-bgd.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.content{
+    color: white;
+    padding: 30px 80px;
+}
+
+.content h1{
+    font-family: 'Courgette', cursive;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.content .btn-top{
+    padding-left: 20px;
+}
+
+.content .btn-top button{
+    font-size: 20px;
+    padding: 10px 70px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 30px;
+}
+
+.content .btn-top #discover{
+    color: aliceblue;
+    background-color: rgb(60, 59, 59);
+}
+
+.content .btn-top #invent{
+    color: black;
+    background-color: burlywood;
+}
+
+.content .btn-top #discover:hover{
+    background-color: rgb(36, 34, 34);
+}
+
+.content .btn-top #invent:hover{
+    background-color: rgb(215, 142, 47);
+}
+
+/* ======================== search label =============================== */
+
+.search-label{
+    background-color: rgb(59, 59, 59);
+}
+
+.search-label input{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10vw;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* ============================= About ===================================== */
+
+.about{
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.about #title{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 40px;
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+
+.about #desc{
+    align-items: center;
+    justify-content: center;
+    padding: 0px 300px;
+    font-size: 15px;
+}
+
+.about-content{
+    display: flex;
+    padding: 50px 70px;
+}
+
+.about img{
+    width: 70%;
+    height: auto;
+}
+
+.about .mission{
+    padding: 80px 30px;
+    vertical-align: middle;
+}
+
+.about .mission h1{
+    font-size: 20px;
+}
+
+.about .mission p{
+    text-align: left;
+    font-size: 15px;
+}
+
+.mission h3{
+    font-size: 20px;
+    margin-top: 40px;
+    color: rgb(115, 0, 0);
+}
+
+.mission h3 a{
+    color: darkblue;
+    cursor: pointer;
+}
+
+.about button{
+    font-size: 25px;
+    background-color: rgb(42, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 80px;
+}
+
+/* ========================= Fiture ============================== */
+
+.type{
+    padding: 120px 80px;
+}
+
+.type .fiture{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 120px;
+}
+
+.fiture .fiture-type{
+    text-align: center;
+    background-color: rgb(73, 69, 69);
+    color: white;
+    padding: 30px 150px;
+    cursor: pointer;
+}
+
+.fiture-type h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+}
+
+.fiture-type span{
+    color: orange;
+    font-size: 40px;
+    font-family: 'Satisfy', cursive;
+}
+
+.fiture-type:hover{
+    background-color: gray;
+    color: black;
+}
+
+/* ================================= Home Content =========================== */
+
+.home-content{
+    padding: 120px 80px;
+}
+
+.sort{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 30px 100px;
+    border-top: 1px solid gray;
+}
+
+.sort .icon{
+    padding-top: 70px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.sort .icon:hover, .sort .active{
+    color: rgb(6, 92, 230);
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(6, 92, 230);
+}
+
+/* ======================== Promotional Content ===================== */
+
+.promote{
+    color: rgb(30, 28, 28);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.promote .car-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.promote .promotional-car{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0px;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.promote .promotional-car:hover{
+    filter: drop-shadow(0 -20px 40px rgb(69, 11, 11));
+}
+
+.promote .promotional-car img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.promote .promotional-car .coffee-desc{
+    padding: 10px 0px;
+}
+
+.promote .promotional-car .coffee-desc h3{
+    font-size: 25px;
+}
+
+.explore-button{
+    padding-top: 10px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.explore-button button{
+    color: rgb(168, 165, 165);
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-image: linear-gradient(rgb(67, 63, 63), rgb(78, 70, 70));
+}
+
+.explore-button button .icon-explore{
+    vertical-align: middle;
+}
+
+.explore-button button:hover{
+    color: white;
+}
+
+
+/* ====================== Footer =================================== */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    background-color: rgb(67, 66, 66);
+    padding: 40px 120px 60px;
+    color: white;
+}
+
+
+footer .columns{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.columns h1{
+    font-size: 33px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 7px;
+    border-bottom: 1px solid burlywood;
+}
+
+.column-content{
+    padding-top: 20px;
+}
+
+.column-content a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.column-content a:hover{
+    color: rgb(86, 86, 210);
+}
+
+footer .close{
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.close .social{
+    padding-top: 20px;
+    align-items: center;
+}
+
+.social .social-logo i{
+    color: white;
+    font-size: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+
+.social .social-logo i:hover{
+    color: rgb(86, 86, 210);
+}
+
+.close p{
+    font-size: 17px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Start Model Page */
+
+#model-page{
+    padding-top: 70px;
+}
+
+.model1{
+    position: relative;
+    background-image: url(../images/model1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.model-content{
+    color: white;
+    padding: 40px 150px;
+}
+
+.model-content h1{
+    color: white;
+    font-family: 'Cardo', serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.model-content h3{
+    font-family: 'Nuosu SIL', serif;
+    font-size: 20px;
+    max-width: 50vh;
+    font-weight: 100;
+}
+
+.model-content button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-image: linear-gradient(white, rgb(170, 168, 168));
+    font-weight: 600;
+}
+
+.model-content button:hover{
+    background: rgb(46, 45, 45);
+    color: white;
+}
+
+.model2{
+    position: relative;
+    padding-top: 70px;
+    margin-top: 10px;
+    background-image: url(../images/model2.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.model3{
+    position: relative;
+    padding-top: 70px;
+    margin-top: 10px;
+    background-image: url(../images/model3.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.model4{
+    position: relative;
+    padding-top: 70px;
+    margin-top: 10px;
+    background-image: url(../images/model4.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.model5{
+    position: relative;
+    padding-top: 70px;
+    margin-top: 10px;
+    background-image: url(../images/model5.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.model6{
+    position: relative;
+    padding-top: 70px;
+    margin-top: 10px;
+    background-image: url(../images/model6.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.explore-model{
+    display: flex;
+    background-color: rgb(206, 190, 190);
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.explore-model button{
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+    background-color: rgb(13, 162, 185);
+    color: white;
+}
+
+.explore-model button:hover{
+    background-color: rgb(0, 121, 235);
+}
+
+#m2 h1{
+    max-width: 300px;
+}
+
+#m3 h1{
+    max-width: 200px;
+}
+
+#d1, #d2, #d3, #d4, #d5, #d6{
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    justify-content: center;
+}
+
+.detail div{
+    margin: 0 80px;
+}
+
+.detail div h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: -15px;
+}
+
+.detail div p{
+    color: rgb(255, 145, 0);
+    font-family: 'Tai Heritage Pro', serif;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.service{
+    background-color: rgb(206, 190, 190);
+    padding: 120px 80px;
+}
+
+.service .service-catalog{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 120px;
+}
+
+.service .service-type{
+    width: 80vh;
+    height: 20vh;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 15px;
+}
+
+.service-icon{
+    color: white;
+}
+
+.service-type h1{
+    color: black;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.service-type p{
+    padding: 0px 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+.service-type:hover{
+    box-shadow: 0px 0px 15px rgba(0,0,0,.5); 
+    box-shadow: 0px 8px 10px -2px black;
+}
+
+/* End Model Page */
+
+/* Start form Page */
+
+#form-body{
+    background-image: linear-gradient(to right, rgba(8, 166, 140, 0.599), rgb(96, 71, 71));
+}
+ 
+ .signup-form{
+     border: 1px solid transparent;
+     width: 80%;
+     max-width: 100%;
+     padding: 24px 40px 24px;
+     margin: 120px 170px;
+ }
+ 
+ .form-title{
+     text-align: center;
+ }
+ 
+ .form-title h2{
+     padding-bottom: 5px;
+     font-size: 35px;
+ }
+
+ .form-title h4{
+     font-size: 20px;
+ }
+ 
+ .form-title h4 span{
+     color: rgb(9, 182, 9);
+     cursor: pointer;
+     font-size: 20px;
+ }
+ 
+ form{
+     padding: 30px 40px;
+ }
+ 
+ .form-control{
+     margin-bottom: 10px;
+     padding-bottom: 20px;
+     position: relative;
+ }
+ 
+ .form-control label{
+     display: inline-block;
+     margin-bottom: 8px;
+     padding-left: 8px;
+     font-size: 20px;
+     color: rgb(59, 59, 59);
+ }
+ 
+ .form-control input, .form-control select{
+     border: 1px solid rgb(186, 180, 180);
+     border-radius: 10px;
+     display: block;
+     font-size: 14px;
+     width: 100%;
+     padding: 20px 40px;
+ }
+
+ .form-control select option{
+     font-size: 20px;
+ }
+ 
+ .form-term{
+     padding: 30px;
+ }
+ 
+ .form-term label{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+ }
+
+ .form-term input{
+    width: 30px;
+    height: 30px;
+ }
+ 
+ .register button{
+     background-color: rgb(199, 137, 231);
+     color: white;
+     border: 2px solid transparent;
+     display: block;
+     width: 100%;
+     padding: 10px;
+     font-size: 16px;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+ 
+ .register button:hover{
+     background-color: rgb(212, 21, 255);
+ }
+
+/* End Form Page */
+
+#legal{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+}
